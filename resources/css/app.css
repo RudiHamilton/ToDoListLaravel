@@ -60,25 +60,25 @@ input, select, textarea {
   @apply rounded px-3 py-2 bg-gray-200 hover:bg-red-500 hover:text-white;
 }
 .profileloggedin {
-  @apply absolute left-[calc(100%-10rem)]; /* Adjust with calc to ensure it's within bounds */
+  @apply absolute left-[calc(100%-10rem)]; 
 }
 .center-container {
   display: flex;
-  justify-content: center; /* Centers horizontally */
-  align-items: center;    /* Centers vertically */
+  justify-content: center; 
+  align-items: center;    
   height: 75vh;         
 }
 
-/* Optional: Styling for the form */
+
 .form-center {
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Adds space between elements */
+  gap: 10px; 
   text-align: center;
   padding: 20px;
-  border: 1px solid green;  /* Optional: Add a border */
-  border-radius: 8px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow */
+  border: 1px solid green;  
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   width:400px;
 
 }
@@ -91,10 +91,10 @@ input, select, textarea {
 
 .form-center button {
   padding: 10px;
-  background-color: #007bff; /* Blue background */
-  color: black;              /* White text */
+  background-color: #007bff; 
+  color: black;            
   border: solid green;
-  border-radius: 4px;        /* Rounded corners */
+  border-radius: 4px;        
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
