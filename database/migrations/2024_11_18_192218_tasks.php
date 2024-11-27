@@ -15,11 +15,12 @@ return new class extends Migration
             $table->id('task_id');
             $table->string('task_name');
             $table->longText('task_description');
-            $table->date('task_date_assigned');
+            $table->timestamp('task_date_assigned')->useCurrent(); 
             $table->date('task_date_due');
             $table->string('task_urgency');
-            $table->boolean('task_complete');
-            $table->date('task_complete_date');
+            $table->boolean('task_complete')->default(false);
+            $table->date('task_complete_date')->nullable();
+            $table->timestamps();
         });
     }
 
