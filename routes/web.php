@@ -32,3 +32,8 @@ Route::post('/usedpages/todolist',function () {
     $taskmodel->save();
     return redirect()->back()->with('message', 'Task added successfully!');
 }); 
+
+Route::get('/usedpages/todolist', function () {
+    $tasks = taskmodel::all();
+    return view('usedpages.todolist', compact('tasks'));
+});

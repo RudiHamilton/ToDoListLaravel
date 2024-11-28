@@ -75,7 +75,6 @@ input, select, textarea {
   background:white;
   display: flex;
   flex-direction: column;
-  gap: 10px; 
   text-align: center;
   padding: 20px;
   border: 1px solid green;  
@@ -99,4 +98,15 @@ input, select, textarea {
   border-radius: 4px;        
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+th {
+  background-color: #f4f4f4;
 }
