@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('Tasks', function(Blueprint $table){
-            $table->id('task_id');
+            $table->bigIncrements('task_id');
             $table->string('task_name');
             $table->longText('task_description');
             $table->timestamp('task_date_assigned')->useCurrent(); 

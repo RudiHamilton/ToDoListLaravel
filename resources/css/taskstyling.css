@@ -111,7 +111,29 @@
     display: flex;
     opacity: 1;
 }
-
-.taskdatepicker {
-
+.hiddenheader{
+    border:0px;
+    background-color: transparent;
+    width:20px
+}
+.hiddencol {
+    visibility: hidden; 
+    border:0px;
+    background-color: transparent;
+    width:20px
+}
+th:last-child {
+    visibility: hidden; /* Hide the last column header */
+}
+tr:hover th:last-child {
+    visibility: hidden; /* Ensure only the button appears */
+}
+th:hover .hiddenheader{
+    background-color: initial !important;
+}
+table tr:not(.hiddenheader):hover{
+    background-color: white;
+}
+tr:hover .hiddencol{
+    visibility:visible;
 }

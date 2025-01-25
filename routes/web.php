@@ -2,7 +2,7 @@
 
 use App\Models\taskmodel;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\TaskController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -33,7 +33,7 @@ Route::post('/usedpages/todolist',function () {
     return redirect()->back()->with('message', 'Task added successfully!');
 }); 
 
-Route::get('/usedpages/todolist', function () {
-    $tasks = taskmodel::all();
-    return view('usedpages.todolist', compact('tasks'));
-});
+Route::get('/usedpages/todolist', [TaskController::class, 'index'])->name('usedpages.todolist.index');
+
+Route::delete('/usedpages/todolist/{task}', [TaskController::class, 'destroy'])->name('usedpages.todolist.destroy');
+

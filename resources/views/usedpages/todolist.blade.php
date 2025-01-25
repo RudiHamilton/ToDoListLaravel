@@ -5,8 +5,5 @@
         </button>
     <x-addtask>
     </x-addtask>
-    
-    <x-cardsforitems :tasks="$tasks">
-        
-    </x-cardsforitems>
+    <x-cardsforitems :tasks="$tasks" />
 </x-layout>

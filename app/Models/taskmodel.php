@@ -15,6 +15,9 @@ class taskmodel extends Model
      * @var string
      */
     protected $table = 'tasks';
+    protected $primaryKey = 'task_id'; 
+    public $incrementing = true; 
+    protected $keyType = 'int'; 
 
     /**
      * The attributes that are mass assignable.
